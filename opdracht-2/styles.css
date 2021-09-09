@@ -3,3 +3,82 @@
 ========================================================= */
 
 /* Schrijf hier  jouw CSS! */
+
+/* 2.1 paars review blok */
+
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* 2.2 div class two */
+
+.two {
+   display: flex;
+    flex-direction: row;
+}
+
+.two div:first-child{
+    flex:auto;
+}
+
+.two div:last-child {
+    align-self: flex-end;
+}
+
+/* 2.3 div class three! */
+
+.three {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.three ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.three ul li {
+    padding: 30px 15px;
+   }
+
+.three div {
+    padding: 30px 0px;
+}
+
+/* 2.4 login blok */
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    position: relative;
+    left: 400px;
+}
+
+/* 2.5 layout gele blokken */
+.five {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.five article{
+    display: inline-block;
+    flex: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    .five article:last-child{
+        width:100%;
+        flex: auto;
+    }
+}
